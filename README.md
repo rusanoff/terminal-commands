@@ -33,18 +33,8 @@ killport ${PORT_NUMBER}
 
 ***
 
-### Выгрузить проект с удаленного хоста:
+### Запуск Google Chrome с отключенной безопасностью
 
 ```bash
-rsync —progress -avhz —delete-after login@host:/project_dir/ /local_project_dir/
+open -n -a /Applications/Google\ Chrome.app --args --disable-web-security --user-data-dir=/Users/${USER_NAME}/.config/chrome-dev
 ```
-
-***
-
-### Загрузить проект на удаленный хост
-
-```bash
-rsync —progress -rlpgoDvhz —delete-after /local_project_dir/ login@host:/project_dir/
-```
-
-***
