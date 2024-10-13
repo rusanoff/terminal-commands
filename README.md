@@ -1,6 +1,14 @@
 # Terminal Commands
 MacOS Terminal Commands
 
+### Получить IP адрес:
+
+```bash
+ipconfig getifaddr en0
+```
+
+***
+
 ### Добавить разделитель в Dock:
 
 ```bash
